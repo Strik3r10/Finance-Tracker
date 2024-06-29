@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FinTrack</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+</head>
+<body>
+  <h1>FinTrack 📈</h1>
+  <h2 class="title">Your own personal finance tracker</h2>
+  <div class="container">
+    <div id="accountInfo" class="accountInfo">
+      <h2>Create Account👤</h2>
+      <form id="accountForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <button type="submit">Create Account</button>
+      </form>
+    </div>
+
+    <div id="transactionDetails" style="display: none;">
+      <h2 id="welcomeMessage"></h2>
+      <form id="transactionForm">
+        <label for="type">Type:</label>
+        <select id="type">
+          <option value="Income">Income</option>
+          <option value="Expense">Expense</option>
+        </select>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" placeholder="Netflix, Shopping.." required>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="500,1000.." required>
+
+        <button type="submit">Add Transaction</button>
+      </form>
+
+      <table id="transactionTable">
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Amount</th>
+          <th>Actions</th>
+        </tr>
+      </table>
+
+      <div id="balance">Current Balance: ₹0.00</div>
+
+      <button id="deleteAccountBtn">Delete Account</button>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@200;400&display=swap');
+
+body {
+  font-family: 'Figtree', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('./bg.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 60vh;
+}
+
+h1{
+  text-align: center;
+  padding: 20px 0;
+  color: #333;
+}
+.title{
+  text-align: center;
+  font-weight: 200;
+  padding: 20px 0;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgba(242, 232, 232, 0.3);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 1rem;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background: #e8f0fe;
+}
+
+option {
+  font-size: 15px;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#balance {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: right;
+  font-size: 18px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actions button {
+  margin-left: 5px;
+  background-color: #ff3f34;
+}
+
+.actions button:hover {
+  background-color: #ff5747;
+}
+
+.edit-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.edit-form input[type="text"],
+.edit-form input[type="number"] {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.edit-form button {
+  width: 100px;
+  margin-top: 10px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .edit-form input[type="text"],
+  .edit-form input[type="number"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .container {
+    max-width: 400px;
+  }
+}
